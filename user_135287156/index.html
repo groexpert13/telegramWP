@@ -17,7 +17,7 @@
             text-align: center;
             margin: 0;
             padding: 50px;
-            background: url('file_11.jpg') no-repeat center center fixed;
+            background: url('file_12.jpg') no-repeat center center fixed;
             background-size: cover;
             height: 100vh; /* Установить высоту страницы */
             display: flex;
@@ -25,7 +25,7 @@
             align-items: center;
         }
         .container {
-            background: rgba(30, 30, 30, 0.7); /* Темный фон с прозрачностью, ближе к предоставленному цвету */
+            background: rgba(30, 30, 30, 0.85); /* Уменьшенная прозрачность */
             color: white; /* Белый текст */
             padding: 20px;
             border-radius: 10px;
@@ -110,26 +110,36 @@
                 left: 150%;
             }
         }
+
+        /* Медиазапросы для мобильных устройств */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%; /* Ширина 90% экрана на мобильных устройствах */
+            }
+            .button {
+                width: 70%; /* Ширина кнопки 70% на мобильных устройствах */
+            }
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <img src="file_11.jpg" alt="Profile Picture" class="profile-pic">
+        <img src="file_13.jpg" alt="Profile Picture" class="profile-pic">
         <div class="title">
-            sdggsd
+            sdgjkgds
             <img src="gal.png" alt="Checkmark">
         </div>
-        <div class="subtitle">52353 subscribers</div>
+        <div class="subtitle">4 subscribers</div>
         <div class="description">
-            sgdgsd
+            sdfkgsdn<br>sgdjdg<br>sdjgk
         </div>        
-        <a href="tg://resolve?domain=sddg" class="button">JOIN CHANNEL</a>
+        <a href="tg://resolve?domain=sdg" class="button">JOIN CHANNEL</a>
     </div>
 
     <script>
         window.onload = function() {
             setTimeout(function() {
-                window.location.href = "tg://resolve?domain=sddg";
+                window.location.href = "tg://resolve?domain=sdg";
             }, 1000); // Пауза в 1 секунду перед автоматическим перенаправлением
         }
 
