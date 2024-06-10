@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram: Join Group Chat</title>
+    
+    <!-- Место для вставки кода отслеживания Google Analytics -->
+     
+    <!-- Место для вставки кода отслеживания Facebook Pixel -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 50px;
+            background: url('file_12.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh; /* Установить высоту страницы */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background: rgba(30, 30, 30, 0.85); /* Уменьшенная прозрачность */
+            color: white; /* Белый текст */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%; /* Ширина 100% для адаптивности */
+            min-height: 450px; /* Минимальная высота */
+            text-align: center;
+            position: relative;
+            backdrop-filter: blur(10px); /* Эффект размытого фона */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .profile-pic {
+            width: 120px; /* Увеличенный логотип */
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            display: block;
+        }
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+            margin: 20px 0 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .title img {
+            width: 20px;
+            height: 20px;
+            margin-left: 5px;
+        }
+        .subtitle {
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+        .description {
+            font-size: 14px;
+            margin-bottom: 20px;
+            line-height: 1.6; /* Увеличенный межстрочный интервал */
+        }
+        .button {
+            display: inline-block;
+            width: 50%; /* Уже кнопка */
+            margin: 20px auto 0; /* Центрирование кнопки */
+            padding: 10px 0;
+            font-size: 18px;
+            color: white;
+            background-color: #0088cc;
+            text-decoration: none;
+            border-radius: 25px; /* Более округлая кнопка */
+            text-align: center;
+            position: relative; /* Для эффекта переливания */
+            overflow: hidden; /* Для эффекта переливания */
+            transition: background-color 0.3s;
+        }
+        .button:hover {
+            background-color: #0077bb; /* Меньше изменять цвет при наведении */
+        }
+        .button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -150%; /* Начальная позиция */
+            width: 10%; /* Узкая полоса */
+            height: 100%;
+            background: rgba(255, 255, 255, 0.5);
+            filter: blur(10px); /* Размытие краев */
+            transform: skewX(-25deg);
+            animation: shine 4s infinite; /* Автоматическое переливание каждые 4 секунды */
+        }
+        @keyframes shine {
+            0% {
+                left: -150%;
+            }
+            50% {
+                left: 150%;
+            }
+            100% {
+                left: 150%;
+            }
+        }
+
+        /* Медиазапросы для мобильных устройств */
+        @media (max-width: 768px) {
+            .container {
+                width: 90%; /* Ширина 90% экрана на мобильных устройствах */
+            }
+            .button {
+                width: 70%; /* Ширина кнопки 70% на мобильных устройствах */
+            }
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                width: 95%; /* Ширина 95% экрана на очень маленьких устройствах */
+            }
+            .button {
+                width: 80%; /* Ширина кнопки 80% на очень маленьких устройствах */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                width: 98%; /* Ширина 98% экрана на самых маленьких устройствах */
+            }
+            .button {
+                width: 85%; /* Ширина кнопки 85% на самых маленьких устройствах */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="file_13.jpg" alt="Profile Picture" class="profile-pic">
+        <div class="title">
+            NAZVA
+            <img src="gal.png" alt="Checkmark">
+        </div>
+        <div class="subtitle">35647358465 subscribers</div>
+        <div class="description">
+            esgfdhfjgkjh<br>sgdhfdjgfkhgfjgdhfs<br>😊😭😍😍😊
+        </div>        
+        <a href="tg://resolve?domain=gfdhgfjh" class="button">JOIN CHANNEL</a>
+    </div>
+
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                window.location.href = "tg://resolve?domain=gfdhgfjh";
+            }, 1000); // Пауза в 1 секунду перед автоматическим перенаправлением
+        }
+
+        // Место для вставки кода отслеживания Google Analytics
+        // Место для вставки кода отслеживания Facebook Pixel
+    </script>
+</body>
+</html>
