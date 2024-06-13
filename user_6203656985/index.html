@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Telegram: Join Group Chat</title>
+
+    <!-- Open Graph метатеги для подсказки об открытии в приложении Telegram -->
+    <meta name="apple-itunes-app" content="app-id=686449807, app-argument=tg://resolve?domain=groconversion">
+    <meta name="google-play-app" content="app-id=org.telegram.messenger">
+    
+
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Join our Telegram Group">
+    <meta property="og:description" content="Join our Telegram group to stay updated with the latest news and updates.">
+    <meta property="og:url" content="https://t.me/joinchat/Qbi2P1wrH4w0YzQy">
+    <meta property="og:image" content="https://yourwebsite.com/file_19.jpg">
+    <meta property="al:ios:url" content="tg://resolve?domain=groconversion">
+    <meta property="al:ios:app_store_id" content="686449807">
+    <meta property="al:ios:app_name" content="Telegram">
+    <meta property="al:android:url" content="tg://resolve?domain=groconversion">
+    <meta property="al:android:app_name" content="Telegram">
+    <meta property="al:android:package" content="org.telegram.messenger">
+    <meta property="al:web:url" content="https://t.me/joinchat/Qbi2P1wrH4w0YzQy">
+
+    <!-- Место для вставки кода отслеживания Google Analytics -->
+     
+    <!-- Место для вставки кода отслеживания Facebook Pixel -->
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+        /* Адаптация под темы браузера */
+        html {
+            color-scheme: light dark;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0; /* Убираем отступы */
+            background: url('file_18.jpg') no-repeat center center fixed;
+            background-size: cover;
+            height: 100vh; /* Установить высоту страницы */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: var(--background-color, #000); /* Черный фон для темной темы по умолчанию */
+        }
+
+        /* Определение светлой и темной темы */
+        @media (prefers-color-scheme: dark) {
+            body {
+                --background-color: #000;
+            }
+        }
+
+        @media (prefers-color-scheme: light) {
+            body {
+                --background-color: #fff;
+            }
+        }
+
+        .container {
+            background: rgba(30, 30, 30, 0.98); /* Уменьшенная прозрачность */
+            color: white; /* Белый текст */
+            padding: 0px;
+            border-radius: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%; /* Ширина 100% для адаптивности */
+            min-height: 450px; /* Минимальная высота */
+            text-align: center;
+            position: relative;
+            backdrop-filter: blur(10px); /* Эффект размытого фона */
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 0 20px; /* Добавляем отступы для краев экрана */
+        }
+        .profile-pic {
+            width: 120px; /* Увеличенный логотип */
+            height: 120px;
+            border-radius: 50%;
+            margin: 0 auto 0px;
+            display: block;
+        }
+        .title {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 20px 0 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .title img {
+            width: 20px;
+            height: 20px;
+            margin-left: 5px;
+        }
+        .subtitle {
+            font-size: 14px;
+            margin-bottom: 10px;
+            opacity: 0.6;
+        }
+        .description {
+            font-size: 18px;
+            margin-bottom: 20px;
+            line-height: 1.6; /* Увеличенный межстрочный интервал */
+        }
+        .button {
+            display: inline-block;
+            width: 50%; /* Уже кнопка */
+            margin: 0px auto 0; /* Центрирование кнопки */
+            padding: 10px 0;
+            font-size: 18px;
+            color: white;
+            background-color: #0088cc;
+            text-decoration: none;
+            border-radius: 25px; /* Более округлая кнопка */
+            text-align: center;
+            position: relative; /* Для эффекта переливания */
+            overflow: hidden; /* Для эффекта переливания */
+            transition: background-color 0.3s;
+            white-space: nowrap; /* Запрещаем перенос текста */
+            font-weight: bold;
+        }
+        .button:hover {
+            background-color: #0077bb; /* Меньше изменять цвет при наведении */
+        }
+        .button::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -150%; /* Начальная позиция */
+            width: 10%; /* Узкая полоса */
+            height: 100%;
+            background: rgba(255, 255, 255, 0.5);
+            filter: blur(10px); /* Размытие краев */
+            transform: skewX(-25deg);
+            animation: shine 4s infinite; /* Автоматическое переливание каждые 4 секунды */
+        }
+        @keyframes shine {
+            0% {
+                left: -150%;
+            }
+            50% {
+                left: 150%;
+            }
+            100% {
+                left: 150%;
+            }
+        }
+
+        /* Медиазапросы для мобильных устройств */
+        @media (max-width: 768px) {
+    body {
+        margin-top: -170px; /* Добавляем отступ сверху для поднятия центрального блока */
+    }
+    .container {
+        width: 95%; /* Ширина 95% экрана на мобильных устройствах */
+        margin: 20px 10px 0; /* Дополнительный отступ сверху */
+    }
+    .button {
+        width: 40%; /* Ширина кнопки 40% на мобильных устройствах */
+        font-size: 18px; /* Уменьшаем размер шрифта на маленьких устройствах */
+        font-weight: bold;
+    }
+    .subtitle a {
+        pointer-events: none; /* Делаем ссылку неактивной */
+        text-decoration: none; /* Убираем подчеркивание */
+        color: inherit; /* Цвет текста родительского элемента */
+    }
+}
+
+@media (max-width: 576px) {
+    body {
+        margin-top: -150px; /* Еще больший отступ сверху для маленьких устройств */
+    }
+    .container {
+        width: 95%; /* Ширина 95% экрана на очень маленьких устройствах */
+        margin: 30px 10px 0; /* Дополнительный отступ сверху */
+    }
+    .button {
+        width: 40%; /* Ширина кнопки 40% на очень маленьких устройствах */
+        font-size: 16px; /* Ещё больше уменьшаем размер шрифта */
+        font-weight: bold;
+    }
+    .subtitle a {
+        pointer-events: none; /* Делаем ссылку неактивной */
+        text-decoration: none; /* Убираем подчеркивание */
+        color: inherit; /* Цвет текста родительского элемента */
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        margin-top: -150px; /* Максимальный отступ сверху для самых маленьких устройств */
+    }
+    .container {
+        width: 95%; /* Ширина 95% экрана на самых маленьких устройствах */
+        margin: 40px 10px 0; /* Дополнительный отступ сверху */
+    }
+    .button {
+        width: 50%; /* Ширина кнопки 50% на самых маленьких устройствах */
+        font-size: 14px; /* Ещё больше уменьшаем размер шрифта */
+        font-weight: bold;
+    }
+    .subtitle a {
+        pointer-events: none; /* Делаем ссылку неактивной */
+        text-decoration: none; /* Убираем подчеркивание */
+        color: inherit; /* Цвет текста родительского элемента */
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="file_19.jpg" alt="Profile Picture" class="profile-pic">
+        <div class="title">
+            groConversion by Oleksandr P.
+            <img src="gal.png" alt="Checkmark">
+        </div>
+        <div class="subtitle"><span>1 000 613</span> subscribers</div><!-- Используем span вместо a -->
+        <div class="description">
+            🔥&nbsp;Канал&nbsp;про&nbsp;маркетинг,&nbsp;технології&nbsp;та&nbsp;AI!<br>Тут&nbsp;про&nbsp;то:&nbsp;<br>-&nbsp;як&nbsp;створювати&nbsp;потужні&nbsp;воронки&nbsp;продаж<br>-&nbsp;використовувати&nbsp;штучний&nbsp;інтелект&nbsp;і&nbsp;технології&nbsp;для&nbsp;збільшення&nbsp;конверсій<br>-&nbsp;мистецтво&nbsp;впливу&nbsp;на&nbsp;людей.&nbsp;<br>Отримуйте&nbsp;конкретні&nbsp;та&nbsp;практичні&nbsp;поради&nbsp;щодня!&nbsp;🚀
+        </div>        
+        <a href="tg://resolve?domain=groconversion" class="button">VIEW IN TELEGRAM</a>
+    </div>
+
+    <script>
+        window.onload = function() {
+            setTimeout(function() {
+                window.location.href = "tg://resolve?domain=groconversion";
+            }, 1000); // Пауза в 1 секунду перед автоматическим перенаправлением
+        }
+
+        // Место для вставки кода отслеживания Google Analytics
+        // Место для вставки кода отслеживания Facebook Pixel
+    </script>
+</body>
+</html>
